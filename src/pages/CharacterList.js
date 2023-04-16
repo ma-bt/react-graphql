@@ -18,7 +18,7 @@ export default function CharacterList() {
     <div className="CharacterList">
       {
         data.characters.results.map(character => {
-          return <Link to={`/react-graphql${character.id}`}>
+          return <Link to={`/react-graphql/${character.id}`}>
             <img src={character.image} alt="" />
             <h2>{character.name}</h2>
           </Link>

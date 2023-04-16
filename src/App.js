@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Routes>
       <Route   path='/react-graphql' Component={CharacterList}/>
-      <Route   path='/react-graphql:id' Component={Character}/>
+      <Route   path='/react-graphql/:id' Component={Character}/>
       </Routes>
      
     </div>
