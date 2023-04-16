@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-      <Route   path='/' Component={CharacterList}/>
-      <Route   path='/:id' Component={Character}/>
+      <Route   path='/react-graphql' Component={CharacterList}/>
+      <Route   path='/react-graphql:id' Component={Character}/>
       </Routes>
      
     </div>
