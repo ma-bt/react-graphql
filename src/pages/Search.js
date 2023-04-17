@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { gql, useLazyQuery } from "@apollo/client";
+import "./CharacterList.css"
 
 
 const GET_CHARACTER_LOCATIONS = gql`
@@ -44,13 +45,13 @@ export default function Search() {
         {error && <div>Something is wrong here</div>}
 
         {data && (
-            <ul>
+            <ul className="search">
                 {data.characters.results.map((character) => {
-                    return <>
+                    return <div >
                     <img src={character.image}alt="" />
                 
                     <li>{character.location.name}</li>
-                    </>
+                    </div>
                 })}
             </ul>
         )}

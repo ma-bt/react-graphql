@@ -5,3 +5,16 @@
     justify-content: space-around;
 
 }
+.Characters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+
+}
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
